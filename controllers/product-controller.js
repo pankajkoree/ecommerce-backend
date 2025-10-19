@@ -1,6 +1,6 @@
 import Products from "../models/Products.js";
 
-const getAllProducts = async (req, res) => {
+export const getAllProducts = async (req, res) => {
   const response = await Products.find();
   if (!response) {
     return res.json({
@@ -10,5 +10,3 @@ const getAllProducts = async (req, res) => {
   }
   return res.json(response);
 };
-
-export default getAllProducts;

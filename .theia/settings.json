@@ -1,0 +1,6 @@
+{
+    "workbench.iconTheme": "catppuccin noctis icons",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
