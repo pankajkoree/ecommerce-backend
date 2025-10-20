@@ -3,13 +3,15 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import productsRouter from "./routes/productsRouter.js";
 import pageNotFound from "./controllers/error-controller.js";
+import introRouter from "./routes/introRouter.js";
 
 dotenv.config();
 
-const PORT = 3000;
+const PORT = 3999;
 
 const server = express();
 
+server.use(introRouter);
 server.use(productsRouter);
 
 // if url doesn't match with any routes
