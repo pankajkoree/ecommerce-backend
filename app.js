@@ -6,15 +6,13 @@ import pageNotFound from "./controllers/error-controller.js";
 import introRouter from "./routes/introRouter.js";
 import cors from "cors";
 
-
-
 dotenv.config();
 
 const PORT = 3999;
 
 const server = express();
 
-app.use(cors());
+server.use(cors());
 server.use(introRouter);
 server.use(productsRouter);
 
